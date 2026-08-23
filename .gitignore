@@ -1,0 +1,83 @@
+# ============================================================
+# Python / Backend
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ============================================================
+# Environment & Secrets — NEVER COMMIT THESE
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# ============================================================
+# Database files (SQLite fallback — Neon is the real DB)
+# ============================================================
+*.db
+*.sqlite
+*.sqlite3
+sih_screening.db
+
+# ============================================================
+# Frontend / Node
+# ============================================================
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+*.tsbuildinfo
+.eslintcache
+
+# ============================================================
+# Storage (runtime-generated files)
+# ============================================================
+backend/storage/documents/
+backend/storage/normalized/
+backend/storage/forensics/
+backend/storage/portraits/
+backend/storage/reports/
+backend/storage/samples/
+
+# ============================================================
+# OS / Editor
+# ============================================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+logs/
