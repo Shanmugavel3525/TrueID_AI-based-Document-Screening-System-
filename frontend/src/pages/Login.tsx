@@ -3,6 +3,8 @@ import { ScanLine, Lock, User, Key, AlertCircle, ArrowRight, ShieldCheck, Info }
 import { useAuth } from '../context/AuthContext';
 import type { UserRole } from '../types';
 
+import { DeveloperProfile } from '../components/layout/DeveloperProfile';
+
 export const Login: React.FC = () => {
   const { login, quickDemoLogin, isLoading } = useAuth();
   const [username, setUsername] = useState('');
@@ -36,6 +38,11 @@ export const Login: React.FC = () => {
     <div className="min-h-screen bg-slate-950 flex flex-col justify-center py-12 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background Subtle Grid Texture */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30" />
+
+      {/* Top Bar with Developer Button */}
+      <div className="absolute top-4 right-4 z-20">
+        <DeveloperProfile />
+      </div>
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md relative z-10">
         {/* Prototype Header Banner */}

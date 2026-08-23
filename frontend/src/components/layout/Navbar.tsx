@@ -2,6 +2,8 @@ import React from 'react';
 import { ScanLine, FileCheck, History, AlertTriangle, Settings, LogOut, Radio, Info, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 
+import { DeveloperProfile } from './DeveloperProfile';
+
 interface NavbarProps {
   currentTab: string;
   onSelectTab: (tab: string) => void;
@@ -87,8 +89,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onSelectTab }) => {
             })}
           </nav>
 
-          {/* User Profile & Demo Switcher */}
-          <div className="flex items-center gap-3 pl-4 border-l border-slate-800">
+          {/* Actions: Developer Profile, User Profile & Sign Out */}
+          <div className="flex items-center gap-2 sm:gap-3 pl-3 sm:pl-4 border-l border-slate-800">
+            <DeveloperProfile />
+
             <div className="text-right hidden sm:block">
               <div className="text-xs font-semibold text-slate-200">
                 {user?.full_name || 'Demo Evaluator'}
