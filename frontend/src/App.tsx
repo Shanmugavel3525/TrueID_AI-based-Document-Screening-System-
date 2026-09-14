@@ -89,10 +89,10 @@ const AppContent: React.FC = () => {
       {/* Persistent Prototype Footer Notice */}
       <footer className="bg-slate-900 border-t border-slate-800 py-3.5 px-4 text-center text-xs text-slate-400 space-y-1">
         <div className="font-semibold text-slate-300">
-          DocVerify AI — Prototype Demonstration System | Not an Official Government Verification System
+           TrueID — Prototype Demonstration System
         </div>
         <div className="text-[11px] text-slate-500 font-mono">
-          Prototype • Demo Environment | Problem Statement ID: 26188 (AI-Based Fake Identity & Document Screening Concept)
+          Prototype • Demo Environment | Problem Statement ID: 26188
         </div>
       </footer>
     </div>

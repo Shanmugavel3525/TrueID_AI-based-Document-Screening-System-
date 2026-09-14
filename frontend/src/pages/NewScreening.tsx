@@ -135,7 +135,7 @@ export const NewScreening: React.FC<NewScreeningProps> = ({ onScreeningComplete 
         <div>
           <span className="font-bold text-amber-300 mr-1">Prototype Demo Ingestion:</span>
           <span>
-            This intake module operates in a demonstration environment using configured AI models and simulated registries. Upload sample identity documents or choose from preloaded synthetic cases below.
+            Upload sample identity documents or choose from preloaded synthetic cases below.
           </span>
         </div>
       </div>

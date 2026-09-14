@@ -26,12 +26,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onSelectTab }) => {
         <div className="flex items-center gap-2 flex-wrap">
           <span className="inline-flex items-center gap-1 font-mono font-bold text-amber-300 bg-amber-950/70 border border-amber-800/80 px-2.5 py-0.5 rounded text-[11px] whitespace-nowrap">
             <Info className="w-3 h-3 flex-shrink-0" />
-            PROTOTYPE MODEL • FOR DEMONSTRATION & EVALUATION ONLY
+            PROTOTYPE MODEL
           </span>
           <span className="text-slate-600 hidden sm:inline">|</span>
-          <span className="text-slate-300 font-medium hidden md:inline whitespace-nowrap">
-            PS-26188 (MHA / SSB Police II Concept)
-          </span>
         </div>
 
         <div className="flex items-center gap-3">
@@ -60,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onSelectTab }) => {
             <div className="flex flex-col justify-center">
               <div className="flex items-center gap-2 whitespace-nowrap">
                 <span className="font-extrabold text-white text-base sm:text-lg tracking-tight leading-none">
-                  DocVerify AI
+                  TrueID
                 </span>
                 <span className="hidden lg:inline-flex items-center text-[10px] px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30 font-mono font-bold tracking-wider whitespace-nowrap">
                   PROTOTYPE
@@ -100,7 +97,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onSelectTab }) => {
 
             <div className="text-right hidden sm:block">
               <div className="text-xs font-semibold text-slate-200 leading-tight whitespace-nowrap">
-                {user?.full_name || 'Demo Evaluator'}
+                {user?.role === 'ADMIN' ? 'VisionX' : (user?.full_name || 'Demo Evaluator')}
               </div>
               <div className="flex items-center justify-end gap-1.5 mt-0.5 whitespace-nowrap">
                 <span className="text-[10px] font-mono text-slate-400">

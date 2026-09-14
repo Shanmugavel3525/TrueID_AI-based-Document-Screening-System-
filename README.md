@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ DocVerify AI
+# 🛡️ TrueID Application
 ### AI-Based Fake Identity & Document Screening System
 
 **Problem Statement ID: 26188 | Ministry of Home Affairs — Sashastra Seema Bal (SSB), Police II Division**
@@ -37,7 +37,7 @@
 
 ## 🔍 Overview
 
-**DocVerify AI** is a production-quality prototype of an AI-powered document screening and identity verification platform built for border/security checkpoint scenarios under **Smart India Hackathon (SIH) Problem Statement #26188**.
+**TrueID** is a production-quality prototype of an AI-powered document screening and identity verification platform built for border/security checkpoint scenarios under **Smart India Hackathon (SIH) Problem Statement #26188**.
 
 The system enables authorized security officers to:
 - Rapidly screen passports, visas, national ID cards, driving licences, and travel permits
@@ -403,7 +403,7 @@ python -m pytest -v backend/tests/
 
 <div align="center">
 
-**DocVerify AI** · Prototype Model · Problem Statement ID: 26188
+**TrueID App** · Prototype Model · Problem Statement ID: 26188
 
 *Built with ❤️ for Smart India Hackathon*
 

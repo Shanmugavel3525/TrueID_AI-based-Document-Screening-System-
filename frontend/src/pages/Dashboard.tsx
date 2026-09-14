@@ -67,7 +67,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
             </span>
           </div>
           <p className="leading-relaxed text-slate-300">
-            This platform is a <strong>prototype proof-of-concept</strong> developed to demonstrate AI-assisted identity and document screening capabilities. Results are intended for <strong>evaluation and decision-support demonstration only</strong> and should not be treated as an official government verification or final legal determination.
+            This platform is a <strong>prototype proof-of-concept</strong> developed to demonstrate AI-assisted identity and document screening functions. Results are intended for <strong>evaluation and decision-support demonstration only</strong>
           </p>
         </div>
       </div>
@@ -476,7 +476,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
               <span>Prototype Notice</span>
             </div>
             <p className="text-[11px] leading-relaxed text-slate-400 font-sans">
-              This is a demonstration system using configured AI models, rules, and simulated registry data. It is not an official government verification or law-enforcement system.
+              This is a demonstration system built completely for internal hackathon..
             </p>
             <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] text-slate-500">
               <span>Environment: Demo Proof-of-Concept</span>

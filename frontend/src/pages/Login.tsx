@@ -49,7 +49,7 @@ export const Login: React.FC = () => {
         <div className="mb-4 text-center">
           <span className="inline-flex items-center gap-1.5 font-mono font-bold text-amber-300 bg-amber-950/80 border border-amber-800 px-3 py-1 rounded-full text-xs shadow-md">
             <Info className="w-3.5 h-3.5" />
-            PROTOTYPE MODEL • FOR DEMONSTRATION ONLY
+            PROTOTYPE MODEL (FOR ONLY DEMO)
           </span>
         </div>
 
@@ -59,13 +59,13 @@ export const Login: React.FC = () => {
             <ScanLine className="w-9 h-9" />
           </div>
           <div className="text-xs font-semibold text-indigo-400 uppercase tracking-widest font-mono">
-            Problem Statement ID: 26188 Concept
+            Problem Statement ID: 26188 
           </div>
           <h1 className="mt-1 text-2xl font-extrabold text-slate-100 tracking-tight">
-            DocVerify AI
+            TrueID
           </h1>
           <p className="mt-1 text-xs text-slate-400">
-            AI-Based Fake Identity & Document Screening System — Prototype Model
+            AI-Based Fake Identity & Document Screening System
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export const Login: React.FC = () => {
                     </span>
                   ) : (
                     <>
-                      <span>Enter Prototype Terminal</span>
+                      <span>Access TrueID Platform</span>
                       <ArrowRight className="w-4 h-4" />
                     </>
                   )}
@@ -155,7 +155,7 @@ export const Login: React.FC = () => {
                 >
                   <ShieldCheck className="w-4 h-4 mb-1 text-emerald-400" />
                   <span className="text-xs font-bold">Officer</span>
-                  <span className="text-[10px] text-slate-500 font-mono">officer123</span>
+
                 </button>
 
                 <button
@@ -165,7 +165,7 @@ export const Login: React.FC = () => {
                 >
                   <ShieldCheck className="w-4 h-4 mb-1 text-amber-400" />
                   <span className="text-xs font-bold">Supervisor</span>
-                  <span className="text-[10px] text-slate-500 font-mono">super123</span>
+
                 </button>
 
                 <button
@@ -175,7 +175,7 @@ export const Login: React.FC = () => {
                 >
                   <Key className="w-4 h-4 mb-1 text-purple-400" />
                   <span className="text-xs font-bold">Admin</span>
-                  <span className="text-[10px] text-slate-500 font-mono">admin123</span>
+                
                 </button>
               </div>
             </div>
@@ -183,7 +183,7 @@ export const Login: React.FC = () => {
             {/* Legal / Prototype Disclaimer */}
             <div className="mt-5 text-center p-2.5 rounded bg-slate-950/60 border border-slate-800">
               <p className="text-[10px] text-slate-400 leading-tight">
-                <strong>PROTOTYPE DEMONSTRATION SYSTEM:</strong> Not an official government verification portal. Results are generated for research, demonstration, and evaluation purposes only.
+                <strong> TrueID PROTOTYPE DEMONSTRATION SYSTEM:</strong> System built for internal hackathon
               </p>
             </div>
           </div>
