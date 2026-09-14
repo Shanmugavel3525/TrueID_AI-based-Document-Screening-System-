@@ -3,7 +3,7 @@ import type {
   RegistryRecord, AuditLog, RiskWeights, DocumentData
 } from '../types';
 
-const API_BASE = (import.meta.env.VITE_API_BASE_URL as string) || 'https://trueid-backend-vj3z.onrender.com/api/v1';
+const API_BASE = (import.meta.env.VITE_API_BASE_URL as string) || 'https://trueid-backend-vj3z.onrender.com/api';
 
 function getAuthHeaders(): HeadersInit {
   const token = localStorage.getItem('sih_auth_token');
