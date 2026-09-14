@@ -3,7 +3,7 @@
 # 🛡️ TrueID Application
 ### AI-Based Fake Identity & Document Screening System
 
-**Problem Statement ID: 26188 | Ministry of Home Affairs — Sashastra Seema Bal (SSB), Police II Division**
+**Problem Statement ID: 26188 | Ministry of Home Affairs
 
 ![Prototype](https://img.shields.io/badge/Status-Prototype%20Model-amber?style=for-the-badge&logo=shield&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)
