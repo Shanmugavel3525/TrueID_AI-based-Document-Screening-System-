@@ -3,7 +3,7 @@ import type {
   RegistryRecord, AuditLog, RiskWeights, DocumentData
 } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = (import.meta.env.VITE_API_BASE_URL as string) || 'https://trueid-backend-vj3z.onrender.com/api/v1';
 
 function getAuthHeaders(): HeadersInit {
   const token = localStorage.getItem('sih_auth_token');
@@ -11,10 +11,14 @@ function getAuthHeaders(): HeadersInit {
 }
 
 export async function loginApi(username: string, password: string): Promise<AuthResponse> {
+  const params = new URLSearchParams();
+  params.append('username', username);
+  params.append('password', password);
+
   const res = await fetch(`${API_BASE}/auth/login`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ username, password }),
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: params.toString(),
   });
   if (!res.ok) {
     const errorData = await res.json().catch(() => ({ detail: 'Authentication failed' }));
